@@ -1,19 +1,26 @@
-# :earth_americas: GDP dashboard template
+# :trophy: 부피·겉넓이 학습용 — 블록 쌓기(직육면체/정육면체)
 
-A simple Streamlit app showing the GDP of different countries in the world.
+Streamlit으로 만든 인터랙티브 학습 앱입니다. 사용자가 가로(width), 세로(depth), 높이(height)를 입력하면
+직육면체(또는 정육면체)를 3D로 시각화하고 부피와 겉넓이 계산 과정을 시각적으로 보여줍니다.
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://gdp-dashboard-template.streamlit.app/)
+특징:
+- 3D 모델: Plotly를 사용해 직육면체 외곽면을 그리고, 각기 다른 면(가로×세로, 가로×높이, 세로×높이)을 색깔로 구분해 보여줍니다.
+- 단위 블록 표시: 부피가 단위 블록(1×1×1)의 총 개수와 같다는 것을 블록으로 쌓아 시각적으로 확인할 수 있습니다.
+- 단위 선택: cm 또는 m 중 선택 가능합니다.
 
-### How to run it on your own machine
+### 실행 방법
 
-1. Install the requirements
+1. 의존성을 설치하세요:
 
-   ```
-   $ pip install -r requirements.txt
-   ```
+```bash
+pip install -r requirements.txt
+```
 
-2. Run the app
+2. 앱을 실행하세요:
 
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+```bash
+streamlit run streamlit_app.py
+```
+
+앱이 로컬 브라우저에서 열리면 사이드바에서 단위와 가로/세로/높이를 조절하여 시각화를 확인할 수 있습니다.
+
